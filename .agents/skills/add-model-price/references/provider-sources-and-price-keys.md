@@ -764,6 +764,32 @@ file and `openAIModels`in July 27 2026 audit. Official sources:`https://develope
   and September 17 2026 confirmations respectively. The Daybreak
   cyber/Rosalind restricted family and the AWS Bedrock Public Extended Access
   SKU were not re-checked this run — no new evidence, standing exclusions.
+- **September 27 2026 audit: full re-fetch found no price or catalog drift**
+  — Re-fetched the full Anthropic pricing page (model, Fast mode, and Batch
+  tables) and models-overview table, the OpenAI aggregate
+  Standard/Batch/Flex/Fast-mode pricing tables plus the full model catalog,
+  both Gemini pricing pages (3.x and 2.5 family) plus the Gemini models
+  catalog, and TypeSafe's `docs.typesafe.ai/models` page. Every price already
+  in the file — including every `gpt-6-astra`/`gpt-6-sol`/`gpt-6-luna`,
+  `claude-opus-5-5`, `claude-fable-5-1`/`claude-mythos-5-1`, every
+  `gemini-3.x-flash` tier, and `jev` — matched verbatim; no updates were
+  needed. `gpt-rosalind-research` still 404s on its own dedicated model page,
+  reconfirming it stays out of scope. The Gemini and OpenAI catalogs list a
+  further modality-specific wave not previously named in this file —
+  `gemini-3.8-flash-tts`, `gemini-3.8-flash-lite-tts`, `gemini-3.5-transcribe`,
+  `gemini-3.1-flash-image`, `gemini-3.1-flash-lite-image`, `gemini-3-pro-image`,
+  `gemini-2.5-flash-image`, and a renamed `antigravity-preview-09-2026`
+  (previously `-05-2026`) on the Gemini side; `gpt-image-2.5-sunburst`,
+  `gpt-image-2.5-flare`, `gpt-realtime-2.1`, `gpt-realtime-2.1-mini`,
+  `gpt-realtime-1.5`, `gpt-audio-1.5`, and `gpt-4o-transcribe-diarize` on the
+  OpenAI side — all image, live/voice, TTS, transcription, or agent-product
+  endpoints with no standard per-token text pricing, so none were added,
+  consistent with the existing modality-specific skip rule. `gpt-5.3-codex`
+  and `gpt-5-chat-latest` were not independently re-fetched this run (no
+  drift signal for either); their prices are carried forward from the
+  September 2 and September 17 2026 confirmations respectively. The Daybreak
+  cyber family and the AWS Bedrock Public Extended Access / Nova gaps were
+  not re-checked this run — no new evidence, standing exclusions.
 
 Capture:
 
